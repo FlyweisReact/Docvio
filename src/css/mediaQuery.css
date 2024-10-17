@@ -1,0 +1,99 @@
+/**
+ * Extra Small Devices (Phones, 0px and up)
+ *
+ * @format
+ */
+
+@media (max-width: 575.98px) {
+  :root {
+    --header-padding: 10px 10px;
+  }
+  .home-banner .img-container {
+    width: 160px;
+  }
+  .home-banner .content h2.headline {
+    font-size: 23px;
+  }
+  .home-banner .content {
+    min-width: 210px;
+  }
+  .home-banner .content h5.sub-headline {
+    font-size: 16px;
+  }
+  .home-banner .content button.join-now {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+/* Small Devices (Tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  :root {
+    --header-padding: 15px 20px;
+  }
+  .home-banner {
+    align-items: center;
+  }
+  .home-banner .img-container {
+    max-width: 220px;
+  }
+  .home-banner .content {
+    min-width: 291px;
+  }
+  .home-banner .content h2.headline {
+    font-size: 32px;
+  }
+  .home-banner .content h5.sub-headline {
+    font-size: 18px;
+  }
+  .home-banner .content button.join-now {
+    font-size: 16px;
+  }
+}
+
+/* Medium Devices (Desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  :root {
+    --header-padding: 15px 40px;
+  }
+  .home-banner {
+    align-items: center;
+  }
+  .home-banner .img-container {
+    width: 300px;
+  }
+  .home-banner .content {
+    min-width: 300px;
+  }
+  .home-banner .content h2.headline {
+    font-size: 36px;
+  }
+  .home-banner .content h5.sub-headline {
+    font-size: 20px;
+  }
+  .home-banner .content button.join-now {
+    font-size: 16px;
+  }
+}
+
+/* Large Devices (Large Desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .home-banner .img-container {
+    width: 340px;
+  }
+  .home-banner .content {
+    min-width: 500px;
+  }
+  .home-banner .content h5.sub-headline {
+    font-size: 28px;
+  }
+  .home-banner .content h2.headline {
+    font-size: 55px;
+  }
+
+}
+
+/* Extra Large Devices (Large Desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Styles for extra extra large devices (larger desktops) */
+}

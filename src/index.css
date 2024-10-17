@@ -1,13 +1,39 @@
+/** @format */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+code , * {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #295092;
+  --header-padding : 20px 60px;
+  --fade-bg : #F1F7FE;
+}
+
+@font-face {
+  font-family: OutfitRegular;
+  src: url('./asset/fonts/Outfit/Outfit-Regular.ttf');
+}
+
+@font-face {
+  font-family: OutfitBold;
+  src: url('./asset/fonts/Outfit/Outfit-Bold.ttf');
+}
+
+@font-face {
+  font-family: OutfitSemibold;
+  src: url('./asset/fonts/Outfit/Outfit-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: OutfitMedium;
+  src: url('./asset/fonts/Outfit/Outfit-Medium.ttf');
 }
