@@ -7,7 +7,7 @@ export const consultConfig = {
   spaceBetween: 20,
   loop: false,
   slidesPerView: "auto",
-  speed: 2000,
+  speed: 500,
   resistance: false,
   resistanceRatio: 0,
   modules: [Navigation, Pagination],

@@ -9,7 +9,7 @@
     --header-padding: 10px 10px;
   }
   .home-banner .img-container {
-    width: 160px;
+ display: none;
   }
   .home-banner .content h2.headline {
     font-size: 23px;
