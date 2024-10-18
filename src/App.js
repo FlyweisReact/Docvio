@@ -2,15 +2,21 @@
 
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Home/Index";
 import DefaultLayout from "./Layouts/DefaultLayout";
+import routes from "./routes";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<DefaultLayout />}>
-          <Route path="/" element={<Index />} />
+          {routes.defaultLayout.map((item) => (
+            <Route
+              path={item.path}
+              element={item.element}
+              key={`defaultRoutes${item.path}`}
+            />
+          ))}
         </Route>
       </Routes>
     </BrowserRouter>

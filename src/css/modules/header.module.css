@@ -96,21 +96,21 @@
   display: none;
   cursor: pointer;
 }
-.mainSidebar{
+.mainSidebar {
   background-color: var(--primary-color);
   height: 100%;
   padding: 10px 20px;
 }
 
-.mainSidebar .closeBtn{
+.mainSidebar .closeBtn {
   display: flex;
   justify-content: flex-end;
 }
-.mainSidebar .closeBtn svg{
+.mainSidebar .closeBtn svg {
   color: #fff;
   cursor: pointer;
 }
-.mainSidebar .actionLink{
+.mainSidebar .actionLink {
   padding: 0;
   margin: 0;
   display: flex;
@@ -120,14 +120,50 @@
   margin-top: 30px;
   list-style: none;
 }
-.mainSidebar .actionLink li a{
+.mainSidebar .actionLink li a {
   font-size: 16px;
   color: #fff;
   text-decoration: none;
   font-family: OutfitRegular;
-
+}
+.mainSidebar .actionLink .loginBtn {
+  font-size: 16px;
+  width: 120px;
+  height: 49px;
+}
+.mainSidebar .custom_login_btns {
+  display: flex;
+  background-color: #fff;
+  gap: 2px;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 120px;
+  margin: auto;
+  margin-top: 20px;
+}
+.mainSidebar .custom_login_btns button {
+  display: flex;
+  align-items: center;
+  font-family: OutfitSemibold;
+  font-size: 16px;
+  background-color: #fff;
+  width: 120px;
+  outline: none;
+  justify-content: center;
+  height: 49px !important;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #001b48;
 }
 
+.mainSidebar .custom_login_btns img {
+  margin: 0;
+  width: 22px;
+}
+.mainSidebar .custom_login_btns span {
+  flex: 1;
+}
 
 /* Medium Devices (Desktops, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -141,6 +177,9 @@
   .floatingBtns button {
     width: 120px;
     font-size: 16px;
+  }
+  .floatingBtns{
+    right: 40px;
   }
 }
 
@@ -158,6 +197,9 @@
     font-size: 14px;
     height: 40px;
   }
+  .floatingBtns{
+    right: 20px;
+  }
 }
 
 /* Extra Small Devices (Phones, 0px and up) */
@@ -168,7 +210,7 @@
   .logo_container {
     width: 80px;
   }
-  .barIcon{
+  .barIcon {
     display: block;
   }
 }

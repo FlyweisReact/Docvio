@@ -7,10 +7,37 @@ import { motion } from "framer-motion";
 import { FaBarsStaggered } from "react-icons/fa6";
 import DefaultCanvas from "./canvas/DefaultCanvas";
 import { IoClose } from "react-icons/io5";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
   const [showFloting_btns, setShowFlotingBtns] = useState(false);
   const [show, setShow] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const links = [
+    {
+      link: "/",
+      title: "Home",
+    },
+    {
+      link: "/about-us",
+      title: "About",
+    },
+    {
+      link: "/faq",
+      title: "Faq",
+    },
+    {
+      link: "/privacy-policy",
+      title: "Privacy Policy",
+    },
+    {
+      link: "/terms&conditions",
+      title: "T&C",
+    },
+  ];
+
   return (
     <>
       <header className={styles.header}>
@@ -23,28 +50,20 @@ const Header = () => {
         </div>
 
         <ul className={styles.links}>
-          <li>
-            {" "}
-            <a href="/" className={styles.activeLink}>
-              Home
-            </a>{" "}
-          </li>
-          <li>
-            {" "}
-            <a href="/">About</a>{" "}
-          </li>
-          <li>
-            {" "}
-            <a href="/">Faq</a>{" "}
-          </li>
-          <li>
-            {" "}
-            <a href="/">Privacy Policy</a>{" "}
-          </li>
-          <li>
-            {" "}
-            <a href="/">T&C</a>{" "}
-          </li>
+          {links.map((item) => (
+            <li key={`links${item.link}`}>
+              {" "}
+              <Link
+                to={item.link}
+                className={
+                  location.pathname === item.link ? styles.activeLink : ""
+                }
+              >
+                {item.title}
+              </Link>{" "}
+            </li>
+          ))}
+
           <li>
             <button
               className={styles.loginBtn}
@@ -93,35 +112,58 @@ const Header = () => {
           </div>
 
           <ul className={styles.actionLink}>
+            {links.map((item) => (
+              <li key={`links${item.link}`}>
+                {" "}
+                <Link
+                  to={item.link}
+                  className={
+                    location.pathname === item.link ? styles.activeLink : ""
+                  }
+                >
+                  {item.title}
+                </Link>{" "}
+              </li>
+            ))}
+
             <li>
-              {" "}
-              <a href="/" className={styles.activeLink}>
-                Home
-              </a>{" "}
-            </li>
-            <li>
-              {" "}
-              <a href="/">About</a>{" "}
-            </li>
-            <li>
-              {" "}
-              <a href="/">Faq</a>{" "}
-            </li>
-            <li>
-              {" "}
-              <a href="/">Privacy Policy</a>{" "}
-            </li>
-            <li>
-              {" "}
-              <a href="/">T&C</a>{" "}
-            </li>
-            <li>
-              <button className={styles.loginBtn}>
+              <button
+                className={styles.loginBtn}
+                onClick={() => setOpen(!open)}
+              >
                 <span>Login as</span>
                 <img src={downCaret} alt="" />
               </button>
             </li>
           </ul>
+          <motion.div
+            className={styles.custom_login_btns}
+            initial={{
+              opacity: 0,
+              visibility: "hidden",
+              display: "none",
+            }}
+            animate={{
+              opacity: open ? 1 : 0,
+              visibility: open ? "visible" : "hidden",
+              display: open ? "flex" : "none",
+            }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            exit={{
+              opacity: 0,
+              visibility: "hidden",
+              display: "none",
+            }}
+          >
+            <button>
+              <span>Doctor</span>
+              <img src={caret_right} alt="" />
+            </button>
+            <button>
+              <span>Patient</span>
+              <img src={caret_right} alt="" />
+            </button>
+          </motion.div>
         </div>
       </DefaultCanvas>
     </>
