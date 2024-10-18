@@ -16,6 +16,7 @@ code , * {
   --primary-color: #295092;
   --header-padding : 20px 60px;
   --fade-bg : #F1F7FE;
+  --text-primary-color : #001B48 ;
 }
 
 @font-face {

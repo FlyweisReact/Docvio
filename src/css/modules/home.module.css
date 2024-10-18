@@ -45,6 +45,7 @@
   padding: var(--header-padding);
   padding-top: 40px;
   background-color: var(--fade-bg);
+  padding-bottom: 60px;
 }
 .empower_health .container {
   max-width: 1200px;
@@ -89,28 +90,319 @@
 
 .specialist {
   position: relative;
-  margin-top: 10rem;
-  margin-bottom: 10rem  ;
 }
-.specialist .content {
-  background-color: green;
-  height: 200px;
+.specialist .above_wave {
   width: 100%;
-  z-index: 1;
+  height: 441px;
+  object-fit: cover;
+  object-position: top;
+  background-color: var(--fade-bg);
+}
+.specialist .below_wave {
+  width: 100%;
+  height: 74px;
+  object-fit: cover;
+  object-position: bottom;
 }
 
-.specialist .above_wave{
-    width: 100%;
-    position: absolute;
-    top: -100px;
-    z-index: -1;
+.specialist .content {
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.specialist .content .written_content {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.specialist .content .written_content h1.headline {
+  font-size: 70px;
+  font-family: OutfitSemibold;
+  color: #fff;
+  text-transform: uppercase;
+}
+.specialist .content .written_content p.description {
+  font-size: 24px;
+  color: #fff;
+  font-family: OutfitRegular;
+  margin: auto;
+}
+.specialist .content .written_content button.join_us {
+  width: 250px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #fff;
+  font-size: 24px;
+  color: #295092;
+  font-family: OutfitSemibold;
+  border-radius: 7px;
+}
+
+.specialist .content .cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.specialist .content .cards .item {
+  width: 266px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.specialist .content .cards .item img {
+  width: 157.5px;
+  height: 157.5px;
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+}
+.specialist .content .cards p.title {
+  font-size: 18px;
+  color: #fff;
+  font-family: OutfitRegular;
+  text-align: center;
+}
+
+.consult_testimonial {
+  padding: var(--header-padding);
+  background-color: #fff;
+}
+.consult_testimonial .headline {
+  font-size: 42px;
+  color: var(--text-primary-color);
+  font-family: OutfitMedium;
+  padding-top: 40px;
+}
+
+.consult_testimonial .swiper_slide {
+  max-width: 438px;
+  width: 100%;
+  padding: 10px;
+}
+
+.consult_testimonial .consult_experience {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px 30px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 7px;
+}
+.consult_testimonial .consult_experience .header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.consult_testimonial .consult_experience .header .thumbnail {
+  width: 59px;
+  height: 59px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.consult_testimonial .consult_experience .header .profile_overview {
+  flex: 1;
+}
+.consult_testimonial .consult_experience .header .profile_overview .user_name {
+  font-size: 16px;
+  font-family: OutfitMedium;
+  color: #444444;
+  margin: 0;
+}
+.consult_testimonial .consult_experience .header .profile_overview .user_desc {
+  font-size: 16px;
+  font-family: OutfitRegular;
+  color: #444444;
+  margin: 0;
+}
+.consult_testimonial .consult_experience .content {
+  padding: 20px 0;
+}
+.consult_testimonial .consult_experience .content .description {
+  font-size: 16px;
+  font-family: OutfitRegular;
+  color: #444444;
+  margin: 0;
+  line-height: 22px;
+}
+.health_blogs {
+  background-color: var(--fade-bg);
+  padding: var(--header-padding);
+  padding-top: 40px;
+}
+.health_blogs .headline {
+  font-size: 53px;
+  color: var(--text-primary-color);
+  text-align: center;
+  font-family: OutfitSemibold;
+}
+.health_blogs .sub_headline {
+  font-size: 27px;
+  color: #000000;
+  text-align: center;
+  font-family: OutfitRegular;
+}
+.health_blogs .blog_card {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.health_blogs .blog_card .item {
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+}
+.health_blogs .blog_card .item .img_container {
+  width: 100%;
+  height: 314px;
+}
+.health_blogs .blog_card .item .img_container .thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 7px;
+}
+.health_blogs .blog_card .item .content {
+  margin-top: 20px;
+}
+.health_blogs .blog_card .item .content p {
+  margin: 0;
+}
+.health_blogs .blog_card .item .content .date {
+  font-size: 25px;
+  color: #000000;
+  font-family: OutfitRegular;
+}
+.health_blogs .blog_card .item .content .title {
+  font-size: 30px;
+  color: var(--text-primary-color);
+  font-family: OutfitBold;
+}
+.health_blogs .blog_card .item .content .read_more {
+  font-size: 25px;
+  color: #000000;
+  font-family: OutfitRegular;
+  text-decoration: underline;
+}
+
+.health_blogs .read_more_btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  max-width: 234px;
+  width: 100%;
+  font-size: 24px;
+  font-family: OutfitRegular;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  padding: 10px 30px;
+  display: block;
+  margin: auto;
+  border-radius: 7px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.health_blogs .blank_div {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.our_team {
+  background-color: var(--fade-bg);
+  padding: var(--header-padding);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.our_team .heading {
+  font-size: 41px;
+  text-align: center;
+  color: var(--text-primary-color);
+  font-family: OutfitBold;
+}
+.our_team .description {
+  max-width: 741px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 23px;
+  color: #2a2a2a;
+  font-family: OutfitRegular;
+}
+.our_team .cards {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 40px;
+}
+.our_team .cards .item {
+  width: 309px;
+  margin: auto;
+  margin-top: 0;
+}
+.our_team .cards .item .thumbnail_container {
+  width: 100%;
+  height: 309px;
+  padding: 5px;
+  border: 1px solid var(--primary-color);
+  border-radius: 100%;
+  background-color: transparent;
+}
+.our_team .cards .item .thumbnail_container .thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 100%;
+}
+
+.our_team .cards .item .content {
+  margin-top: 10px;
+}
+.our_team .cards .item .content .title {
+  font-size: 25px;
+  margin: 0;
+  color: var(--text-primary-color);
+  font-family: OutfitMedium;
+  line-height: normal;
+}
+.our_team .cards .item .content .designation {
+  font-size: 16px;
+  margin: 0;
+  color: #2a2a2a;
+  font-family: OutfitRegular;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.download_app_banner {
+  width: 100%;
+}
+.download_app_banner img {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  height: auto;
+  min-height: 300px;
+  max-height: 700px;
 }
 
 /* Extra Small Devices (Phones, 0px and up)*/
 @media (max-width: 575.98px) {
-  .book_consultation .headline {
-    font-size: 23px;
-  }
   .book_consultation .cards {
     gap: 10px;
   }
@@ -133,19 +425,84 @@
   .empower_health .container .content {
     gap: 10px;
   }
-  .empower_health .container .content h1.headline {
+
+  .specialist .above_wave {
+    min-height: 100px;
+    height: auto;
+    max-height: 160px;
+  }
+  .specialist .content .written_content button.join_us {
+    width: 120px;
+  }
+
+  .specialist .content .cards .item img {
+    width: 80px;
+    height: 80px;
+  }
+  .specialist .below_wave {
+    min-height: 49px;
+    height: auto;
+    max-height: 50px;
+  }
+  .health_blogs .blog_card .item {
+    max-width: 300px;
+  }
+
+  .health_blogs .blog_card .item .img_container {
+    height: 185px;
+  }
+  .health_blogs .read_more_btn {
+    max-width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .our_team {
+    padding-top: 20px;
+  }
+  .our_team .cards {
+    gap: 10px;
+  }
+  .our_team .cards .item {
+    width: 160px;
+  }
+  .our_team .cards .item .thumbnail_container {
+    height: 160px;
+  }
+  /* standard heading  */
+  .empower_health .container .content h1.headline,
+  .book_consultation .headline,
+  .specialist .content .written_content h1.headline,
+  .consult_testimonial .headline,
+  .health_blogs .headline,
+  .our_team .heading {
     font-size: 23px;
   }
-  .empower_health .container .content p.description {
+
+  /* standard sub-heading  */
+  .empower_health .container .content p.description,
+  .specialist .content .written_content p.description,
+  .specialist .content .written_content button.join_us,
+  .health_blogs .sub_headline,
+  .health_blogs .blog_card .item .content .title,
+  .health_blogs .read_more_btn,
+  .our_team .description,
+  .our_team .cards .item .content .title {
     font-size: 16px;
+  }
+
+  /* small font */
+
+  .specialist .content .cards p.title,
+  .health_blogs .blog_card .item .content .date,
+  .health_blogs .blog_card .item .content .read_more,
+  .our_team .cards .item .content .designation {
+    font-size: 14px;
   }
 }
 
 /* Small Devices (Tablets, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .book_consultation .headline {
-    font-size: 32px;
-  }
   .book_consultation .cards {
     gap: 10px;
   }
@@ -156,22 +513,86 @@
   .book_consultation .cards .item img {
     height: auto;
   }
-  .book_consultation .cards .item .title {
-    font-size: 16px;
+
+  .specialist .above_wave {
+    min-height: 160px;
+    height: auto;
+    max-height: 240px;
   }
-  .empower_health .container .content h1.headline {
+  .specialist .content .written_content button.join_us {
+    width: 150px;
+  }
+
+  .specialist .content .cards .item {
+    width: 180px;
+  }
+  .specialist .content .cards .item img {
+    width: 80px;
+    height: 80px;
+  }
+  .health_blogs .blog_card {
+    gap: 10px;
+  }
+  .health_blogs .blog_card .item {
+    max-width: 170px;
+    min-width: 140px;
+  }
+  .health_blogs .blog_card .item .img_container {
+    height: 103px;
+  }
+  .health_blogs .read_more_btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 150px;
+  }
+  .our_team .cards {
+    gap: 10px;
+  }
+  .our_team .cards .item {
+    width: 200px;
+  }
+  .our_team .cards .item .thumbnail_container {
+    height: 200px;
+  }
+
+  /* standar heading  */
+  .empower_health .container .content h1.headline,
+  .specialist .content .written_content h1.headline,
+  .book_consultation .headline,
+  .consult_testimonial .headline,
+  .health_blogs .headline,
+  .our_team .heading {
     font-size: 32px;
   }
-  .empower_health .container .content p.description {
+
+  /* standar l sub-heading */
+  .health_blogs .sub_headline {
+    font-size: 20px;
+  }
+
+  /* standard sub-heading  */
+  .empower_health .container .content p.description,
+  .specialist .content .written_content p.description,
+  .book_consultation .cards .item .title,
+  .specialist .content .written_content button.join_us,
+  .health_blogs .blog_card .item .content .title,
+  .our_team .description,
+  .our_team .cards .item .content .title {
     font-size: 16px;
+  }
+
+  /* small font */
+  .specialist .content .cards p.title,
+  .health_blogs .blog_card .item .content .date,
+  .health_blogs .blog_card .item .content .read_more,
+  .health_blogs .read_more_btn,
+  .our_team .cards .item .content .designation {
+    font-size: 14px;
   }
 }
 
 /* Medium Devices (Desktops, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .book_consultation .headline {
-    font-size: 36px;
-  }
   .book_consultation .cards {
     gap: 20px;
   }
@@ -182,17 +603,104 @@
   .book_consultation .cards .item img {
     height: auto;
   }
-  .book_consultation .cards .item .title {
-    font-size: 20px;
+
+  .specialist .above_wave {
+    min-height: 200px;
+    height: auto;
+    max-height: 310px;
   }
-  .empower_health .container .content h1.headline {
+  .specialist .content .written_content button.join_us {
+    width: 200px;
+  }
+
+  .specialist .content .cards .item {
+    width: 200px;
+  }
+  .specialist .content .cards .item img {
+    width: 120px;
+    height: 120px;
+  }
+  .health_blogs .blog_card {
+    gap: 20px;
+  }
+  .health_blogs .blog_card .item {
+    max-width: 200px;
+  }
+  .health_blogs .blog_card .item .img_container {
+    height: 127px;
+  }
+  .health_blogs .read_more_btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 200px;
+  }
+
+  .our_team .cards {
+    gap: 10px;
+  }
+  .our_team .cards .item {
+    width: 250px;
+  }
+  .our_team .cards .item .thumbnail_container {
+    height: 250px;
+  }
+
+  /* standard heaging */
+  .specialist .content .written_content h1.headline,
+  .empower_health .container .content h1.headline,
+  .book_consultation .headline,
+  .consult_testimonial .headline,
+  .health_blogs .headline,
+  .our_team .heading {
     font-size: 36px;
   }
-  .empower_health .container .content p.description {
+
+  /* standard description */
+  .specialist .content .written_content p.description,
+  .empower_health .container .content p.description,
+  .book_consultation .cards .item .title,
+  .health_blogs .sub_headline,
+  .health_blogs .blog_card .item .content .title,
+  .health_blogs .blog_card .item .content .read_more,
+  .health_blogs .read_more_btn,
+  .our_team .description,
+  .our_team .cards .item .content .title {
     font-size: 20px;
+  }
+
+  /* small font */
+  .specialist .content .written_content button.join_us,
+  .specialist .content .cards p.title,
+  .health_blogs .blog_card .item .content .date {
+    font-size: 16px;
   }
 }
 
 /* Large Devices (Large Desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .specialist .above_wave {
+    min-height: 333px;
+    height: auto;
+    max-height: 400px;
+  }
+  .specialist .content .written_content h1.headline,
+  .empower_health .container .content h1.headline {
+    font-size: 55px;
+  }
+}
+
+/* Extra Large Devices (1200px and up) */
+@media (min-width: 1200px) {
+  .specialist .above_wave {
+    height: 490px;
+  }
+  .specialist .below_wave {
+    height: 150px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .specialist .above_wave {
+    height: 600px;
+  }
 }

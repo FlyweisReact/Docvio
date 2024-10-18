@@ -2,10 +2,13 @@
 
 import React from "react";
 import Banner from "../../components/Home/Banner";
-import styles from "../../css/modules/home.module.css";
 import Consultation from "../../components/Home/Consultation";
 import Empower from "../../components/Home/Empower";
-import { waveImg } from "../../asset";
+import Specialist from "../../components/Home/Specialist";
+import ConsultSlider from "../../components/Home/ConsultSlider";
+import HealthBlogs from "../../components/Home/HealthBlogs";
+import OurTeam from "../../components/Home/OurTeam";
+import DownloadApp from "../../components/Home/DownloadApp";
 
 const Index = () => {
   return (
@@ -13,11 +16,11 @@ const Index = () => {
       <Banner />
       <Consultation />
       <Empower />
-
-      {/* <div className={styles.specialist}>
-        <img src={waveImg} alt="" className={styles.above_wave} />
-        <div className={styles.content}></div>
-      </div> */}
+      <Specialist />
+      <ConsultSlider />
+      <HealthBlogs />
+      <OurTeam />
+      <DownloadApp />
     </section>
   );
 };
