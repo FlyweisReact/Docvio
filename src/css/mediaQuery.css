@@ -9,18 +9,28 @@
     --header-padding: 10px 10px;
   }
   .home-banner .img-container {
- display: none;
+    display: none;
   }
-  .home-banner .content h2.headline {
-    font-size: 23px;
-  }
+
   .home-banner .content {
     min-width: 210px;
   }
-  .home-banner .content h5.sub-headline {
+  .error-page button{
+    max-width: 120px;
+  }
+  .error-page .headline{
+    font-size: 35px;
+  }
+
+  .home-banner .content h2.headline {
+    font-size: 23px;
+  }
+  .home-banner .content h5.sub-headline,
+  .error-page .description {
     font-size: 16px;
   }
-  .home-banner .content button.join-now {
+  .home-banner .content button.join-now ,
+  .error-page button{
     font-size: 14px;
     padding: 10px 20px;
   }

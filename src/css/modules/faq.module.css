@@ -1,0 +1,117 @@
+/** @format */
+
+.faq_page_container * {
+  margin: 0;
+  padding: 0;
+}
+
+.faq_container {
+  padding: var(--header-padding);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.faq_container .heading {
+  font-family: OutfitMedium;
+  font-size: 52.5px;
+}
+.faq_container .description {
+  color: #2a2a2a;
+  font-size: 21px;
+  font-family: OutfitRegular;
+  margin-top: 20px;
+}
+
+.custom_accordion {
+  padding: var(--header-padding);
+}
+.custom_accordion .container {
+  max-width: 1400px;
+  margin: auto;
+}
+.custom_accordion .accordion_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  padding: 10px 0px;
+}
+
+.custom_accordion .accordion_head h5 {
+  font-family: OutfitMedium;
+  font-size: 23.81px;
+  color: #000000;
+}
+
+.custom_accordion .accordion_head svg {
+  font-size: 30px;
+  color: var(--text-primary-color);
+}
+.custom_accordion .accordion_body.open {
+  margin-top: 10px;
+  padding: 10px 0px;
+}
+.custom_accordion .accordion_body.closed {
+  margin: 0;
+  padding: 0;
+}
+.custom_accordion .accordion_body.closed p {
+  height: inherit;
+}
+.custom_accordion .accordion_body p {
+  color: #2a2a2a;
+  font-size: 20px;
+  font-family: OutfitRegular;
+}
+.custom_accordion .rotate_arrow {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+/* Extra Small Devices (Phones, 0px and up)*/
+@media (max-width: 575.98px) {
+  .faq_container .heading {
+    font-size: var(--font-size-large);
+  }
+  .faq_container .description {
+    font-size: var(--font-size-smaller);
+  }
+  .custom_accordion .accordion_head h5 {
+    font-size: var(--font-size-small);
+  }
+  .custom_accordion .accordion_body p {
+    font-size: var(--font-size-extra-small);
+  }
+}
+
+/* Small Devices (Tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .faq_container .heading {
+    font-size: var(--font-size-medium-large);
+  }
+  .faq_container .description {
+    font-size: var(--font-size-small);
+  }
+  .custom_accordion .accordion_head h5 {
+    font-size: var(--font-size-base);
+  }
+  .custom_accordion .accordion_body p {
+    font-size: var(--font-size-smaller);
+  }
+}
+
+/* Medium Devices (Desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .faq_container .heading {
+    font-size: var(--font-size-subheading);
+  }
+  .faq_container .description {
+    font-size: var(--font-size-small);
+  }
+  .custom_accordion .accordion_head h5 {
+    font-size: var(--font-size-base);
+  }
+  .custom_accordion .accordion_body p {
+    font-size: var(--font-size-smaller);
+  }
+}

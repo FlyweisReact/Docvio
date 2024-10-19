@@ -1,5 +1,6 @@
 /** @format */
 
+// import logo from "./images/about-us/logo_transparent.png";
 import logo from "./images/logo.png";
 import downCaret from "./images/down_caret.png";
 import caret_right from "./images/caret-right.png";
@@ -39,8 +40,24 @@ import facebookIcon from './images/facebook.png'
 import instaIcon from './images/insta.png'
 import emailIcon from './images/email.png'
 import youtubeIcon from './images/youtube.png'
+import about_us_banner from './images/about-us/banner.png'
+import go_down_img from './images/about-us/go_down.png'
+import founder_pic from './images/about-us/founder.png'
+import careImg from './images/about-us/care.png'
+import ethicsIcon from './images/about-us/ethics.png'
+import excellenceIcon from './images/about-us/excellence.png'
+import advancementIcon from './images/about-us/advance.png'
+import growthIcon from './images/about-us/growth.png'
 
 export {
+  careImg ,
+  ethicsIcon,
+  excellenceIcon,
+  advancementIcon,
+  growthIcon,
+  founder_pic,
+  go_down_img,
+  about_us_banner,
   facebookIcon,
   instaIcon,
   emailIcon,

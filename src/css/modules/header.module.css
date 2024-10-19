@@ -7,7 +7,13 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 60px;
+  max-height: 89px;
+  height: auto;
 }
 
 .logo_container {
@@ -28,7 +34,8 @@
   gap: 30px;
   align-items: center;
 }
-.links a {
+.links a,
+.navLink {
   font-size: 19px;
   color: #fff;
   text-decoration: none;
@@ -120,7 +127,8 @@
   margin-top: 30px;
   list-style: none;
 }
-.mainSidebar .actionLink li a {
+.mainSidebar .actionLink li a,
+.navLink {
   font-size: 16px;
   color: #fff;
   text-decoration: none;
@@ -170,7 +178,8 @@
   .logo_container {
     width: 120px;
   }
-  .links a {
+  .links a,
+  .navLink {
     font-size: 16px;
   }
   .loginBtn,
@@ -178,7 +187,7 @@
     width: 120px;
     font-size: 16px;
   }
-  .floatingBtns{
+  .floatingBtns {
     right: 40px;
   }
 }
@@ -188,7 +197,8 @@
   .logo_container {
     width: 80px;
   }
-  .links a {
+  .links a,
+  .navLink {
     font-size: 14px;
   }
   .loginBtn,
@@ -197,7 +207,7 @@
     font-size: 14px;
     height: 40px;
   }
-  .floatingBtns{
+  .floatingBtns {
     right: 20px;
   }
 }

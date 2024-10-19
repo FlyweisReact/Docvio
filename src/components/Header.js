@@ -1,19 +1,22 @@
 /** @format */
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { caret_right, downCaret, logo } from "../asset";
 import styles from "../css/modules/header.module.css";
 import { motion } from "framer-motion";
 import { FaBarsStaggered } from "react-icons/fa6";
 import DefaultCanvas from "./canvas/DefaultCanvas";
 import { IoClose } from "react-icons/io5";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [showFloting_btns, setShowFlotingBtns] = useState(false);
   const [show, setShow] = useState(false);
   const [open, setOpen] = useState(false);
+  const headerRef = useRef();
+  const [headerHeight, setHeaderHeight] = useState(0);
 
   const links = [
     {
@@ -38,9 +41,20 @@ const Header = () => {
     },
   ];
 
+  useEffect(() => {
+    if (headerRef.current) {
+      setHeaderHeight(headerRef.current.offsetHeight);
+    }
+  }, [headerRef]);
+
+  const navigationHandler = (link) => {
+    setShow(false);
+    navigate(link);
+  };
+
   return (
     <>
-      <header className={styles.header}>
+      <header className={styles.header} ref={headerRef}>
         <div className={styles.logo_container}>
           <img src={logo} alt="logo" />
         </div>
@@ -104,7 +118,7 @@ const Header = () => {
           </button>
         </motion.div>
       </header>
-
+      <div style={{ marginTop: `${headerHeight}px` }} />
       <DefaultCanvas show={show} handleClose={() => setShow(false)}>
         <div className={styles.mainSidebar}>
           <div className={styles.closeBtn}>
@@ -113,16 +127,14 @@ const Header = () => {
 
           <ul className={styles.actionLink}>
             {links.map((item) => (
-              <li key={`links${item.link}`}>
-                {" "}
-                <Link
-                  to={item.link}
-                  className={
-                    location.pathname === item.link ? styles.activeLink : ""
-                  }
-                >
-                  {item.title}
-                </Link>{" "}
+              <li
+                key={`links${item.link}`}
+                className={`${
+                  location.pathname === item.link ? styles.activeLink : ""
+                } ${styles.navLink} `}
+                onClick={() => navigationHandler(item.link)}
+              >
+                {item.title}
               </li>
             ))}
 

@@ -7,34 +7,45 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code , * {
+code,
+* {
   padding: 0;
   margin: 0;
 }
 
 :root {
   --primary-color: #295092;
-  --header-padding : 20px 60px;
-  --fade-bg : #F1F7FE;
-  --text-primary-color : #001B48 ;
+  --header-padding: 20px 60px;
+  --fade-bg: #f1f7fe;
+  --text-primary-color: #001b48;
+  --font-size-heading: 42px; /* Largest Heading */
+  --font-size-subheading: 36px; /* Subheading */
+  --font-size-medium-large: 32px; /* Subheading */
+  --font-size-large: 23px; /* Large font size */
+  --font-size-medium: 22px; /* Medium font size */
+  --font-size-base: 20px; /* Base font size */
+  --font-size-small: 18px; /* Small font size */
+  --font-size-smaller: 16px; /* Slightly smaller */
+  --font-size-extra-small: 14px; /* Extra small font size */
+  --font-size-xs-small: 12px; /* Smallest font size */
 }
 
 @font-face {
   font-family: OutfitRegular;
-  src: url('./asset/fonts/Outfit/Outfit-Regular.ttf');
+  src: url("./asset/fonts/Outfit/Outfit-Regular.ttf");
 }
 
 @font-face {
   font-family: OutfitBold;
-  src: url('./asset/fonts/Outfit/Outfit-Bold.ttf');
+  src: url("./asset/fonts/Outfit/Outfit-Bold.ttf");
 }
 
 @font-face {
   font-family: OutfitSemibold;
-  src: url('./asset/fonts/Outfit/Outfit-SemiBold.ttf');
+  src: url("./asset/fonts/Outfit/Outfit-SemiBold.ttf");
 }
 
 @font-face {
   font-family: OutfitMedium;
-  src: url('./asset/fonts/Outfit/Outfit-Medium.ttf');
+  src: url("./asset/fonts/Outfit/Outfit-Medium.ttf");
 }
