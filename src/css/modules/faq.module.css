@@ -18,7 +18,7 @@
   color: #2a2a2a;
   font-size: 21px;
   font-family: OutfitRegular;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .custom_accordion {
@@ -70,6 +70,10 @@
 
 /* Extra Small Devices (Phones, 0px and up)*/
 @media (max-width: 575.98px) {
+  .faq_container {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
   .faq_container .heading {
     font-size: var(--font-size-large);
   }

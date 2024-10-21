@@ -3,6 +3,7 @@
 import React from "react";
 import styles from "../../css/modules/home.module.css";
 import { constants } from "../../constant/data";
+import { Link } from "react-router-dom";
 
 const HealthBlogs = () => {
   return (
@@ -19,9 +20,9 @@ const HealthBlogs = () => {
             <div className={styles.content}>
               <p className={styles.date}> {item.date} </p>
               <p className={styles.title}>{item.title}</p>
-              <a className={styles.read_more} href="/">
+              <Link className={styles.read_more} to={`/news/post/${item.id}`}>
                 Read more
-              </a>
+              </Link>
             </div>
           </div>
         ))}

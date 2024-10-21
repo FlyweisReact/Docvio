@@ -56,7 +56,9 @@ const Header = () => {
     <>
       <header className={styles.header} ref={headerRef}>
         <div className={styles.logo_container}>
-          <img src={logo} alt="logo" />
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
 
         <div className={styles.barIcon} onClick={() => setShow(true)}>
@@ -107,8 +109,9 @@ const Header = () => {
             visibility: "hidden",
             display: "none",
           }}
+          onMouseLeave={() => setShowFlotingBtns(false)}
         >
-          <button>
+          <button onClick={() => navigate("/doctor/login")}>
             <span>Doctor</span>
             <img src={caret_right} alt="" />
           </button>
@@ -166,8 +169,9 @@ const Header = () => {
               visibility: "hidden",
               display: "none",
             }}
+            onMouseLeave={() => setOpen(false)}
           >
-            <button>
+            <button onClick={() => navigate("/doctor/login")}>
               <span>Doctor</span>
               <img src={caret_right} alt="" />
             </button>

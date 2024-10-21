@@ -1,7 +1,6 @@
 /** @format */
 
-// import logo from "./images/about-us/logo_transparent.png";
-import logo from "./images/logo.png";
+import logo from "./images/about-us/logo_transparent.png";
 import downCaret from "./images/down_caret.png";
 import caret_right from "./images/caret-right.png";
 import doctorImg from "./images/doctor.png";
@@ -35,22 +34,34 @@ import team_member_2 from "./images/team/2.jpg";
 import team_member_3 from "./images/team/3.jpg";
 import team_member_4 from "./images/team/4.jpg";
 import download_apps_img from "./images/download.png";
-import coloredLogo from "./images/coloredLogo.png";
-import facebookIcon from './images/facebook.png'
-import instaIcon from './images/insta.png'
-import emailIcon from './images/email.png'
-import youtubeIcon from './images/youtube.png'
-import about_us_banner from './images/about-us/banner.png'
-import go_down_img from './images/about-us/go_down.png'
-import founder_pic from './images/about-us/founder.png'
-import careImg from './images/about-us/care.png'
-import ethicsIcon from './images/about-us/ethics.png'
-import excellenceIcon from './images/about-us/excellence.png'
-import advancementIcon from './images/about-us/advance.png'
-import growthIcon from './images/about-us/growth.png'
+import coloredLogo from "./images/about-us/colored-logo.png";
+import facebookIcon from "./images/facebook.png";
+import instaIcon from "./images/insta.png";
+import emailIcon from "./images/email.png";
+import youtubeIcon from "./images/youtube.png";
+import about_us_banner from "./images/about-us/banner.png";
+import go_down_img from "./images/about-us/go_down.png";
+import founder_pic from "./images/about-us/founder.png";
+import careImg from "./images/about-us/care.png";
+import ethicsIcon from "./images/about-us/ethics.png";
+import excellenceIcon from "./images/about-us/excellence.png";
+import advancementIcon from "./images/about-us/advance.png";
+import growthIcon from "./images/about-us/growth.png";
+import doctor_login_img from "./images/login.png";
+import user_icon from './images/icons/user.png'
+import mobile_icon from './images/icons/mobile.png'
+import mail_icon from './images/icons/mail.png'
+import password_icon from './images/icons/password.png'
+import flag_icon from './images/icons/flag.png'
 
 export {
-  careImg ,
+  flag_icon,
+  mobile_icon,
+  mail_icon,
+  password_icon,
+  user_icon,
+  doctor_login_img,
+  careImg,
   ethicsIcon,
   excellenceIcon,
   advancementIcon,

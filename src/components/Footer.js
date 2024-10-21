@@ -10,6 +10,7 @@ import {
   youtubeIcon,
 } from "../asset";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,7 +18,9 @@ const Footer = () => {
       <footer className={styles.footer}>
         <div className={styles.container}>
           <div className={styles.subscription_box}>
-            <img src={coloredLogo} alt="" className={styles.logo} />
+            <Link to="/">
+              <img src={coloredLogo} alt="" className={styles.logo} />
+            </Link>
             <p className={styles.subHeading}>
               Connecting Patients with Doctors, Seamlessly
             </p>
@@ -32,10 +35,10 @@ const Footer = () => {
           <div className={styles.info_container}>
             <div className={styles.links_container}>
               <h5 className={styles.headline}>DocVio</h5>
-              <a href="/">About</a>
-              <a href="/">Privacy Policy</a>
-              <a href="/">Terms and Conditions</a>
-              <a href="/">FAQ</a>
+              <Link to="/about-us">About</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
+              <Link to="/terms&conditions">Terms and Conditions</Link>
+              <Link to="/faq">FAQ</Link>
             </div>
             <div className={styles.links_container}>
               <h5 className={styles.headline}>Quick Links</h5>

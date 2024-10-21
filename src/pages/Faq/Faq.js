@@ -10,7 +10,7 @@ import FaqIntro from "../../components/Faq/FaqIntro";
 const bannerInfo = {
   heading: "<span>Docvoi</span>",
   subHeading: "Connecting Patients with Doctors, Seamlessly",
-  description: "FAQ",
+  description: "<p style='margin-top : 30px;' >FAQ</p>",
   hashLink: "/faq#faq",
 };
 

@@ -1,0 +1,69 @@
+/** @format */
+.privacy_page_container {
+  margin-bottom: 60px;
+}
+.privacy_container {
+  padding: var(--header-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.privacy_container .headline {
+  font-size: 25px;
+  color: #000000;
+  font-family: OutfitMedium;
+  text-transform: uppercase;
+  margin: 0;
+}
+.privacy_container .content {
+  margin-top: 10px;
+}
+.privacy_container .content p.sub_heading {
+  margin: 0;
+  font-size: 21px;
+  font-family: OutfitRegular;
+  color: #2a2a2a;
+}
+.privacy_container .content ul {
+  margin: 0;
+}
+.privacy_container .content ul li {
+  margin: 0;
+  font-size: 21px;
+  font-family: OutfitRegular;
+  color: #2a2a2a;
+  list-style: disc;
+}
+/* Extra Small Devices (Phones, 0px and up)*/
+@media (max-width: 575.98px) {
+  .privacy_container .headline {
+    font-size: var(--font-size-small);
+  }
+  .privacy_container .content p.sub_heading,
+  .privacy_container .content ul li {
+    font-size: var(--font-size-smaller);
+  }
+}
+
+/* Small Devices (Tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .privacy_container .headline {
+    font-size: var(--font-size-base);
+  }
+  .privacy_container .content p.sub_heading,
+  .privacy_container .content ul li {
+    font-size: var(--font-size-small);
+  }
+}
+
+/* Medium Devices (Desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .privacy_container .headline {
+    font-size: var(--font-size-base);
+  }
+  .privacy_container .content p.sub_heading,
+  .privacy_container .content ul li {
+    font-size: var(--font-size-small);
+  }
+}

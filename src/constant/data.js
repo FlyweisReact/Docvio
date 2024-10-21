@@ -248,4 +248,222 @@ export const constants = {
       description: `If you forget your password, simply click the "Forgot Password" link on the login page. You’ll receive an email with instructions to reset your password.`,
     },
   ],
+  privacyPolicy: [
+    {
+      heading: "1. Information We Collect",
+      subHeading:
+        "When you use DocVoi, we may collect the following types of information:",
+      lists: [
+        "Personal Information: This includes your name, email address, phone number, and other identifying details you provide when creating an account or using our services.",
+        "Health Information: We collect health-related data that you provide for the purposes of connecting with healthcare providers and managing your health records.",
+        "Usage Information: We collect information about your interactions with our platform, including IP addresses, device information, and browsing activity.",
+        "Payment Information: If you use our paid services, we collect payment information such as credit card details and billing information.",
+      ],
+    },
+    {
+      heading: "2. How We Use Your Information",
+      subHeading: "We use the information we collect to:",
+      lists: [
+        "Provide and improve our services",
+        "Connect patients with healthcare providers",
+        "Manage your health records securely",
+        "Communicate with you regarding your account or appointments",
+        "Process payments for services",
+        "Analyze usage trends to enhance user experience",
+        "Comply with legal requirements",
+      ],
+    },
+    {
+      heading: "3. Sharing Your Information",
+      subHeading:
+        "DocVoi does not sell or rent your personal information to third parties. However, we may share your information with:",
+      lists: [
+        "Healthcare Providers: When necessary, to facilitate care and communication between patients and doctors.",
+        "Service Providers: Third-party vendors that help us operate our platform, such as payment processors or IT service providers. These providers are obligated to protect your information.",
+        "Legal Authorities: When required by law or to protect our rights, safety, or the security of our users.",
+      ],
+    },
+    {
+      heading: "4. How We Protect Your Information",
+      subHeading:
+        "We implement industry-standard security measures to protect your personal data from unauthorized access, loss, or misuse. This includes encryption, secure servers, and regular security audits. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.",
+    },
+    {
+      heading: "5. Your rights",
+      subHeading: "You have the right to:",
+      lists: [
+        "Access and Update Your Information: You can view and edit your personal information through your account settings.",
+        "Request Deletion: You may request the deletion of your account and associated data, subject to legal requirements.",
+        "Opt-Out of Communications: You can unsubscribe from marketing communications at any time.",
+      ],
+    },
+    {
+      heading: "6. cookies and tracking technologies",
+      subHeading:
+        "DocVoi uses cookies and similar tracking technologies to enhance your experience on our platform. These technologies help us remember your preferences, understand how you use our services, and improve site functionality. You can control your cookie preferences through your browser settings.",
+    },
+    {
+      heading: "7. Children’s policy",
+      subHeading:
+        "DocVoi is not intended for use by individuals under the age of 18 without parental consent. We do not knowingly collect personal information from children without appropriate consent.",
+    },
+    {
+      heading: "8. Changes to this privacy policy",
+      subHeading:
+        "We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any significant changes by posting the new policy on our website or through other communication methods.",
+    },
+  ],
+  terms: [
+    {
+      heading: "1. Introduction",
+      subHeading:
+        "When you use DocVoi, we may collect the following types of information:",
+      lists: [
+        "Personal Information: This includes your name, email address, phone number, and other identifying details you provide when creating an account or using our services.",
+        "Health Information: We collect health-related data that you provide for the purposes of connecting with healthcare providers and managing your health records.",
+        "Usage Information: We collect information about your interactions with our platform, including IP addresses, device information, and browsing activity.",
+        "Payment Information: If you use our paid services, we collect payment information such as credit card details and billing information.",
+      ],
+    },
+    {
+      heading: "2. Eligibility",
+      subHeading:
+        "To use DocVoi, you must be at least 18 years old or have the consent of a parent or legal guardian if you are a minor. By using our platform, you represent and warrant that you meet this eligibility requirement.",
+    },
+    {
+      heading: "3. account registration",
+      subHeading:
+        "To access certain features of DocVoi, you will be required to create an account. You agree to provide accurate and complete information when registering and to keep this information updated. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. Notify us immediately of any unauthorized use of your account.",
+    },
+    {
+      heading: "4. Services provided",
+      subHeading:
+        "DocVoi facilitates the connection between patients and healthcare providers. We are not a healthcare provider and do not offer medical advice, diagnosis, or treatment. All healthcare services are provided by independent professionals. We do not endorse or recommend any particular provider.",
+    },
+    {
+      heading: "user conduct",
+      subHeading: "When using DocVoi, you agree to:",
+      lists: [
+        "Use our platform in a manner that complies with all applicable laws and regulations.",
+        "Refrain from using the platform for any unlawful, fraudulent, or harmful purposes.",
+        "Respect the privacy and rights of other users and providers.",
+        "Provide accurate and truthful information in all interactions.",
+        "You agree not to:",
+        "Use our platform to send spam or unsolicited messages.",
+        "Engage in any activity that could damage, disable, or impair the functionality of our platform.",
+        "Attempt to gain unauthorized access to any part of our platform or user data.",
+      ],
+    },
+    {
+      heading: "6. payment & fees",
+      subHeading:
+        "Certain services provided through DocVoi may be subject to fees. By using paid services, you agree to pay all applicable fees. Payment details, including credit card information, will be collected and processed securely by our third-party payment processor. Fees are non-refundable unless stated otherwise.",
+    },
+    {
+      heading: "7. medical disclaimer",
+      subHeading:
+        "DocVoi is a platform that connects patients with healthcare providers, but we are not responsible for the medical advice or treatment you receive. All healthcare-related services are provided by licensed professionals. Any information provided on DocVoi should not be considered medical advice and should not replace consultation with a qualified healthcare provider.",
+    },
+    {
+      heading: "8. limitation of liability",
+      subHeading:
+        "To the fullest extent permitted by law, DocVoi shall not be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use of, or the inability to use, our platform or services. This includes, but is not limited to, damages for loss of profits, data, or other intangible losses.",
+    },
+    {
+      heading: "9. termination",
+      subHeading:
+        "We reserve the right to suspend or terminate your access to DocVoi at our discretion, without notice, for any violation of these Terms and Conditions or other conduct that we deem harmful to our platform or users.",
+    },
+    {
+      heading: "10. intellectual property",
+      subHeading:
+        "All content on DocVoi, including but not limited to text, graphics, logos, and software, is the property of DocVoi or its licensors and is protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, or create derivative works from any content on DocVoi without our express written consent.",
+    },
+    {
+      heading: "11. modification of terms",
+      subHeading:
+        "We may update these Terms and Conditions from time to time. Any changes will be posted on our website, and your continued use of DocVoi after such changes constitutes your acceptance of the new terms.",
+    },
+    {
+      heading: "12. governing law",
+      subHeading:
+        "These Terms and Conditions are governed by and construed in accordance with the laws of [Insert Jurisdiction], without regard to its conflict of law principles. Any legal action or proceeding arising under these Terms and Conditions shall be brought exclusively in the courts located in India.",
+    },
+  ],
+  newsContent: [
+    {
+      heading: "7 Tips to increase your immune system",
+      description:
+        "A strong immune system is key to staying healthy and fighting off illness. By making small adjustments to your daily routine, you can help strengthen your immune defenses and promote overall well-being. Here are seven tips to give your immune system a natural boost:",
+    },
+    {
+      heading: "1. Eat a Balanced Diet",
+      description:
+        "A nutrient-rich diet plays a crucial role in supporting your immune system. Focus on foods packed with vitamins and minerals such as:",
+      lists: [
+        "Vitamin C: Found in citrus fruits, bell peppers, and spinach, this vitamin is known for boosting immune function.",
+        "Vitamin E: Nuts, seeds, and spinach are rich in this antioxidant that helps the body fight infections.",
+        "Zinc: Include beans, chickpeas, and whole grains to support your immune response.",
+        "Aim for a variety of colorful fruits and vegetables, lean proteins, and healthy fats to nourish your body.",
+      ],
+    },
+    {
+      heading: "2. Stay Hydrated",
+      description:
+        "Water is essential for overall health, including a well-functioning immune system. Staying hydrated helps your body flush out toxins and supports the production of lymph, which carries white blood cells throughout the body.",
+      lists: [
+        "Drink at least 8 glasses of water per day.",
+        "You can also stay hydrated by consuming herbal teas, broth-based soups, and water-rich fruits like watermelon and cucumber.",
+      ],
+    },
+    {
+      heading: "3. Get Plenty of Sleep",
+      description:
+        "Sleep is when your body regenerates and repairs itself. Poor sleep can weaken your immune system, making you more susceptible to illness.",
+      lists: [
+        "Aim for 7-9 hours of quality sleep each night.",
+        "Maintain a regular sleep schedule, even on weekends.",
+        "Create a relaxing bedtime routine to signal to your body it’s time to rest.",
+      ],
+    },
+    {
+      heading: "4. Exercise Regularly",
+      description:
+        "Moderate physical activity can give your immune system a boost by promoting good circulation, which allows your immune cells to move freely throughout your body.",
+      lists: [
+        "Aim for at least 30 minutes of exercise most days of the week.",
+        "Try walking, cycling, swimming, or yoga to keep your body active without over-exertion.",
+        "Avoid intense workouts when you feel run down, as this can actually weaken your immune system.",
+      ],
+    },
+    {
+      heading: "5. Manage Stress Levels",
+      description:
+        "Chronic stress can lead to increased inflammation and weakened immunity. Learning how to manage stress is crucial for maintaining a healthy immune response.",
+      lists: [
+        "Practice relaxation techniques such as meditation, deep breathing exercises, or mindfulness.",
+        "Engage in hobbies you enjoy to unwind and reduce stress.",
+        "Make time for regular breaks throughout the day to avoid burnout.",
+      ],
+    },
+    {
+      heading: "6. Maintain Good Hygiene",
+      description:
+        "Practicing proper hygiene can prevent the spread of germs and bacteria that may compromise your immune system.",
+      lists: [
+        "Wash your hands frequently with soap and water for at least 20 seconds.",
+        "Avoid touching your face, especially your eyes, nose, and mouth.",
+        "Keep surfaces in your home clean, particularly in high-traffic areas like the kitchen and bathroom.",
+      ],
+    },
+    {
+      heading: "7. Consider Immune-Boosting Supplements",
+      description: "In addition to a healthy diet, certain supplements can help support your immune function. Common immune-boosting supplements include:",
+      lists: ["Vitamin D: Known to enhance pathogen-fighting effects of monocytes and macrophages." ,"Probiotics: These good bacteria support gut health, which is linked to immune function." ,"Elderberry: Often used to prevent and ease cold and flu symptoms."],
+    },
+    {
+      heading: "Final Thoughts",
+      description: "Boosting your immune system is about consistent, healthy habits. By eating a nutrient-dense diet, getting enough sleep, staying active, and managing stress, you can help strengthen your body’s natural defenses. Incorporating these tips into your lifestyle will not only improve your immunity but also your overall health."
+    },
+  ],
 };

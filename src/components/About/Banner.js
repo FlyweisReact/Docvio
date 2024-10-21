@@ -16,7 +16,12 @@ const Banner = ({ heading, subHeading, description, hashLink }) => {
           />
         )}
         {subHeading && <h4 className={styles.sub_heading}>{subHeading}</h4>}
-        {description && <p className={styles.description}>{description}</p>}
+        {description && (
+          <p
+            className={styles.description}
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
+        )}
         {hashLink ? (
           <HashLink to={hashLink}>
             <img src={go_down_img} alt="" className={styles.go_down} />
