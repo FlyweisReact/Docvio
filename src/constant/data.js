@@ -2,6 +2,9 @@
 
 import {
   advancementIcon,
+  appointment_icon,
+  bank_icon,
+  calender_icon,
   careImg,
   consult_user_icon,
   consult_user_icon_2,
@@ -12,16 +15,23 @@ import {
   consult_user_icon_7,
   consult_user_icon_8,
   consult_user_icon_9,
+  customer_care_icon,
+  earning_icon,
   ethicsIcon,
   excellenceIcon,
   growthIcon,
   healthBlog_img,
   healthBlog_img2,
   healthBlog_img3,
+  notification_icon,
+  policies_icon,
+  presciption_icon,
+  profile_icon,
   team_member_1,
   team_member_2,
   team_member_3,
   team_member_4,
+  transaction_icon,
 } from "../asset/index";
 
 export const constants = {
@@ -466,4 +476,56 @@ export const constants = {
       description: "Boosting your immune system is about consistent, healthy habits. By eating a nutrient-dense diet, getting enough sleep, staying active, and managing stress, you can help strengthen your body’s natural defenses. Incorporating these tips into your lifestyle will not only improve your immunity but also your overall health."
     },
   ],
+  doctorSidebar : [
+    {
+      icon  : profile_icon ,
+      title : 'Profile' ,
+      link : "/doctor/dashboard"
+    },
+    {
+      icon  : notification_icon ,
+      title : 'Notification' ,
+      link : "/doctor/notification"
+    },
+    {
+      icon  : appointment_icon ,
+      title : 'Appointment' ,
+      link : "/doctor/notification"
+    },
+    {
+      icon  : presciption_icon ,
+      title : 'Prescription' ,
+      link : "/doctor/notification"
+    },
+    {
+      icon  : calender_icon ,
+      title : 'Manage Date' ,
+      link : "/doctor/notification"
+    },
+    {
+      icon  : customer_care_icon ,
+      title : 'Help & Support' ,
+      link : "/doctor/notification"
+    },
+    {
+      icon  : policies_icon ,
+      title : 'Manage Insurance Policy' ,
+      link : "/doctor/notification"
+    },
+    {
+      icon  : earning_icon ,
+      title : 'Earning' ,
+      link : "/doctor/notification"
+    },
+    {
+      icon  : transaction_icon ,
+      title : 'Transaction' ,
+      link : "/doctor/notification"
+    },
+    {
+      icon  : bank_icon ,
+      title : 'Bank Account' ,
+      link : "/doctor/notification"
+    },
+  ]
 };

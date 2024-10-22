@@ -8,9 +8,12 @@ import NewsArticle from "../pages/News/NewsArticle";
 import NotFound from "../pages/NotFound/404";
 import PrivacyPolicy from "../pages/Policy/PrivacyPolicy";
 import Terms from "../pages/Terms/Terms";
-import DoctorRegister from '../pages/DoctorPanel/Register/DoctorRegister'
+import DoctorRegister from "../pages/DoctorPanel/Register/DoctorRegister";
+import DoctorPanelLayout from "../Layouts/DoctorPanelLayout";
+import DoctorDashboard from "../pages/DoctorPanel/Dashboard/DoctorDashboard";
 
 const routes = [
+  // Default Layout
   {
     layout: DefaultLayout,
     routes: [
@@ -40,8 +43,9 @@ const routes = [
       },
     ],
   },
+  // Pages Without Layout
   {
-    layout: null, // No layout for this routes
+    layout: null,
     routes: [
       {
         element: <DoctorLogin />,
@@ -54,6 +58,16 @@ const routes = [
       {
         element: <NotFound />,
         path: "*",
+      },
+    ],
+  },
+  // Doctor Panel Layout
+  {
+    layout: DoctorPanelLayout,
+    routes: [
+      {
+        element: <DoctorDashboard />,
+        path: "/doctor/dashboard",
       },
     ],
   },

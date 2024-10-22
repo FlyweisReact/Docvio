@@ -1,6 +1,6 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
 import styles from "../../../css/modules/Doctor/login.module.css";
 import {
   coloredLogo,
@@ -8,9 +8,20 @@ import {
   mail_icon,
   password_icon,
 } from "../../../asset";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const DoctorLogin = () => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState(null);
+  const [password, setPassword] = useState(null);
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    navigate("/doctor/dashboard");
+  };
+
+  const isBtnActive = email && password;
+
   return (
     <section className={styles.doctor_login_page}>
       <div className={styles.left_section}>
@@ -18,21 +29,40 @@ const DoctorLogin = () => {
       </div>
       <div className={styles.right_section}>
         <img src={coloredLogo} alt="" className={styles.logo} />
-        <form className={styles.form_section}>
+        <form className={styles.form_section} onSubmit={submitHandler}>
           <div className={styles.input_div}>
             <img src={mail_icon} alt="" className={styles.icon} />
-            <input type="text" placeholder="Email Id" />
+            <input
+              type="text"
+              placeholder="Email Id"
+              required
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+            />
           </div>
           <div className={styles.input_div}>
             <img src={password_icon} alt="" className={styles.icon} />
-            <input type="text" placeholder="Password" />
+            <input
+              type="text"
+              placeholder="Password"
+              required
+              onChange={(e) => setPassword(e.target.value)}
+              value={password}
+            />
           </div>
 
           <Link to="/" className={styles.forget_password}>
             Forget Password?
           </Link>
 
-          <button className={styles.sign_in_btn}>Sign In</button>
+          <button
+            className={`${styles.sign_in_btn} ${
+              isBtnActive ? styles.active : ""
+            } `}
+            type={"submit"}
+          >
+            Sign In
+          </button>
 
           <p className={styles.or}>OR</p>
 

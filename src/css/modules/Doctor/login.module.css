@@ -104,6 +104,11 @@
   color: #fff;
   font-family: OutfitMedium;
   margin-top: 40px;
+  cursor: pointer;
+}
+.sign_in_btn.active {
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--text-primary-color);
 }
 
 .or {

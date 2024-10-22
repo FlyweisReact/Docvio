@@ -15,10 +15,10 @@
   .home-banner .content {
     min-width: 210px;
   }
-  .error-page button{
+  .error-page button {
     max-width: 120px;
   }
-  .error-page .headline{
+  .error-page .headline {
     font-size: 35px;
   }
 
@@ -29,10 +29,16 @@
   .error-page .description {
     font-size: 16px;
   }
-  .home-banner .content button.join-now ,
-  .error-page button{
+  .home-banner .content button.join-now,
+  .error-page button {
     font-size: 14px;
     padding: 10px 20px;
+  }
+  .doctor-panel-layout .left-container {
+    display: none;
+  }
+  .doctor-panel-layout .right-container {
+    padding: 10px;
   }
 }
 
@@ -59,6 +65,9 @@
   .home-banner .content button.join-now {
     font-size: 16px;
   }
+  .doctor-panel-layout .left-container {
+    display: none;
+  }
 }
 
 /* Medium Devices (Desktops, 768px and up) */
@@ -83,6 +92,9 @@
   }
   .home-banner .content button.join-now {
     font-size: 16px;
+  }
+  .doctor-panel-layout .left-container {
+    display: none;
   }
 }
 

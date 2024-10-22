@@ -1,0 +1,111 @@
+/** @format */
+
+.sidebar_container {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  height: 100%;
+  overflow-y: auto;
+}
+.header {
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--text-primary-color);
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  border-radius: 0px 0px 50px 0px;
+}
+
+.header .logo_container {
+  width: 128px;
+  height: 40px;
+  display: block;
+  margin: auto;
+}
+.header .logo_container .thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.header .profile_info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.header .profile_info img {
+  width: 98px;
+  height: 98px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 100%;
+}
+
+.header .profile_info .title {
+  font-size: var(--font-size-base);
+  color: #ffffff;
+  font-family: OutfitBold;
+  margin: 0;
+}
+
+.nav_links {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav_links .item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.nav_links .item.active {
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--text-primary-color);
+}
+.nav_links .item.active .title {
+  color: #fff;
+}
+.nav_links .item img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.nav_links .item .title {
+  margin: 0;
+  color: var(--text-primary-color);
+  font-size: var(--font-size-small);
+  font-family: OutfitRegular;
+}
+
+.log_out_btn {
+  width: 100%;
+  background-color: #ff8484;
+  border: 1px solid #ff8484;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  font-size: var(--font-size-smaller);
+  color: #fff;
+  font-family: OutfitRegular;
+}
+.log_out_btn img {
+  width: 30px;
+  object-fit: contain;
+}
+
+
+
