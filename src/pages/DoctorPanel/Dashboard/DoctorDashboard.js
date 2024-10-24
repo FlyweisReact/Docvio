@@ -1,15 +1,18 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
 import styles from "../../../css/modules/Doctor/dashboard.module.css";
 import { cash_icon } from "../../../asset";
 import { Switch, ConfigProvider } from "antd";
 
-const InputGroup = ({ label }) => {
+const InputGroup = ({ label, onChangeEvent }) => {
   return (
     <div className={styles.input_group}>
       <label className={styles.label}> {label} </label>
-      <input type={"text"} />
+      <input
+        type={"text"}
+        onChange={onChangeEvent ? onChangeEvent : undefined}
+      />
     </div>
   );
 };
@@ -35,10 +38,14 @@ const RadioBtn = ({ heading, subHeading }) => {
 };
 
 const DoctorDashboard = () => {
+  const [name, setName] = useState("");
   return (
     <section className={styles.doctor_dashboard}>
       <form className={styles.form_container}>
-        <InputGroup label={"Clinic Name"} />
+        <InputGroup
+          label={"Clinic Name"}
+          onChangeEvent={(e) => setName(e.target.value)}
+        />
         <InputGroup label={"First Name"} />
         <InputGroup label={"Last Name"} />
         <InputGroup label={"Subtitle"} />
@@ -108,7 +115,9 @@ const DoctorDashboard = () => {
           <RadioBtn heading={"Status"} subHeading={"Turn on to show doctor"} />
         </div>
 
-        <button className={styles.submit_btn}>Submit</button>
+        <button className={`${styles.submit_btn} ${name ? styles.active : ""}`}>
+          Submit
+        </button>
       </form>
     </section>
   );

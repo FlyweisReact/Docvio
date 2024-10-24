@@ -11,6 +11,11 @@ import Terms from "../pages/Terms/Terms";
 import DoctorRegister from "../pages/DoctorPanel/Register/DoctorRegister";
 import DoctorPanelLayout from "../Layouts/DoctorPanelLayout";
 import DoctorDashboard from "../pages/DoctorPanel/Dashboard/DoctorDashboard";
+import DoctorNotification from "../pages/DoctorPanel/Notification/DoctorNotification";
+import DoctorAppointments from "../pages/DoctorPanel/Appointment/DoctorAppointments";
+import DoctorPrescription from "../pages/DoctorPanel/Prescription/DoctorPrescription";
+import CreatePriscription from "../pages/DoctorPanel/Prescription/CreatePriscription";
+import ManageDate from "../pages/DoctorPanel/ManageDate/ManageDate";
 
 const routes = [
   // Default Layout
@@ -68,6 +73,26 @@ const routes = [
       {
         element: <DoctorDashboard />,
         path: "/doctor/dashboard",
+      },
+      {
+        element: <DoctorNotification />,
+        path: "/doctor/notification",
+      },
+      {
+        element: <DoctorAppointments />,
+        path: "/doctor/appointments",
+      },
+      {
+        element: <DoctorPrescription />,
+        path: "/doctor/prescription",
+      },
+      {
+        element: <CreatePriscription />,
+        path: "/doctor/create-prescription",
+      },
+      {
+        element: <ManageDate />,
+        path: "/doctor/manage-date",
       },
     ],
   },

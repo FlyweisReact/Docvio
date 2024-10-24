@@ -468,64 +468,70 @@ export const constants = {
     },
     {
       heading: "7. Consider Immune-Boosting Supplements",
-      description: "In addition to a healthy diet, certain supplements can help support your immune function. Common immune-boosting supplements include:",
-      lists: ["Vitamin D: Known to enhance pathogen-fighting effects of monocytes and macrophages." ,"Probiotics: These good bacteria support gut health, which is linked to immune function." ,"Elderberry: Often used to prevent and ease cold and flu symptoms."],
+      description:
+        "In addition to a healthy diet, certain supplements can help support your immune function. Common immune-boosting supplements include:",
+      lists: [
+        "Vitamin D: Known to enhance pathogen-fighting effects of monocytes and macrophages.",
+        "Probiotics: These good bacteria support gut health, which is linked to immune function.",
+        "Elderberry: Often used to prevent and ease cold and flu symptoms.",
+      ],
     },
     {
       heading: "Final Thoughts",
-      description: "Boosting your immune system is about consistent, healthy habits. By eating a nutrient-dense diet, getting enough sleep, staying active, and managing stress, you can help strengthen your body’s natural defenses. Incorporating these tips into your lifestyle will not only improve your immunity but also your overall health."
+      description:
+        "Boosting your immune system is about consistent, healthy habits. By eating a nutrient-dense diet, getting enough sleep, staying active, and managing stress, you can help strengthen your body’s natural defenses. Incorporating these tips into your lifestyle will not only improve your immunity but also your overall health.",
     },
   ],
-  doctorSidebar : [
+  doctorSidebar: [
     {
-      icon  : profile_icon ,
-      title : 'Profile' ,
-      link : "/doctor/dashboard"
+      icon: profile_icon,
+      title: "Profile",
+      link: "/doctor/dashboard",
     },
     {
-      icon  : notification_icon ,
-      title : 'Notification' ,
-      link : "/doctor/notification"
+      icon: notification_icon,
+      title: "Notification",
+      link: "/doctor/notification",
     },
     {
-      icon  : appointment_icon ,
-      title : 'Appointment' ,
-      link : "/doctor/notification"
+      icon: appointment_icon,
+      title: "Appointment",
+      link: "/doctor/appointments",
     },
     {
-      icon  : presciption_icon ,
-      title : 'Prescription' ,
-      link : "/doctor/notification"
+      icon: presciption_icon,
+      title: "Prescription",
+      link: "/doctor/prescription",
     },
     {
-      icon  : calender_icon ,
-      title : 'Manage Date' ,
-      link : "/doctor/notification"
+      icon: calender_icon,
+      title: "Manage Date",
+      link: "/doctor/manage-date",
     },
     {
-      icon  : customer_care_icon ,
-      title : 'Help & Support' ,
-      link : "/doctor/notification"
+      icon: customer_care_icon,
+      title: "Help & Support",
+      link: "/doctor/",
     },
     {
-      icon  : policies_icon ,
-      title : 'Manage Insurance Policy' ,
-      link : "/doctor/notification"
+      icon: policies_icon,
+      title: "Manage Insurance Policy",
+      link: "/doctor/",
     },
     {
-      icon  : earning_icon ,
-      title : 'Earning' ,
-      link : "/doctor/notification"
+      icon: earning_icon,
+      title: "Earning",
+      link: "/doctor/",
     },
     {
-      icon  : transaction_icon ,
-      title : 'Transaction' ,
-      link : "/doctor/notification"
+      icon: transaction_icon,
+      title: "Transaction",
+      link: "/doctor/",
     },
     {
-      icon  : bank_icon ,
-      title : 'Bank Account' ,
-      link : "/doctor/notification"
+      icon: bank_icon,
+      title: "Bank Account",
+      link: "/doctor/",
     },
-  ]
+  ],
 };

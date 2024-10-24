@@ -1,0 +1,180 @@
+/** @format */
+
+.page_container * {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.header .heading {
+  font-size: var(--font-size-medium-large);
+  color: var(--text-primary-color);
+  font-family: OutfitBold;
+}
+
+.header .switch_btns {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header .switch_btns button {
+  width: 150px;
+  padding: 10px 20px;
+  border: 1px solid #bfdfff;
+  font-size: var(--font-size-base);
+  color: var(--text-primary-color);
+  background-color: transparent;
+  font-family: OutfitSemibold;
+  border-radius: 10px;
+  outline: none;
+}
+.header .switch_btns button.active {
+  background-color: #afd6ff;
+  border: 1px solid #afd6ff;
+}
+
+.cards {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-items: start;
+  gap: 20px;
+}
+.cards .item {
+  max-width: 300px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  align-items: center;
+}
+.cards .item .headline {
+  font-size: var(--font-size-medium);
+  color: #070707;
+  font-family: OutfitBold;
+}
+.cards .item p.title {
+  font-size: var(--font-size-small);
+  color: #000000;
+  font-family: OutfitRegular;
+}
+.cards .item p.description {
+  font-size: var(--font-size-small);
+  color: #757575;
+  font-family: OutfitRegular;
+}
+
+.calender_container {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+.calender_container .tag {
+  color: #49454f;
+  font-size: var(--font-size-extra-small);
+  font-family: OutfitRegular;
+}
+
+.calender_container .header {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.calender_container .header p.heading {
+  color: #1d1b20;
+  font-size: var(--font-size-medium-large);
+  font-family: OutfitRegular;
+}
+
+.calender_container .header .edit {
+  width: 40px;
+  cursor: pointer;
+}
+.calender_container .date_selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.calender_container .date_selector select {
+  color: #49454f;
+  font-size: var(-font-size-extra-small);
+  font-family: OutfitRegular;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.calender_container .date_selector .icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.calender_container .date_selector .icons img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.calender_container .last_btn {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.calender_container .last_btn button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--text-primary-color);
+  font-family: OutfitMedium;
+}
+.calender_container .last_btn div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Extra Small Devices (Phones, 0px and up)*/
+@media (max-width: 575.98px) {
+  .header .heading {
+    font-size: var(--font-size-large);
+  }
+  .header .switch_btns {
+    gap: 10px;
+  }
+  .header .switch_btns button {
+    font-size: var(--font-size-extra-small);
+    width: 120px;
+  }
+  .cards .item .headline {
+    font-size: var(--font-size-small);
+  }
+  .cards .item p.title,
+  .cards .item p.description {
+    font-size: var(--font-size-smaller);
+  }
+  .calender_container .header p.heading {
+    font-size: var(--font-size-base);
+  }
+  .cards .item {
+    max-width: 100%;
+    margin: auto;
+  }
+}

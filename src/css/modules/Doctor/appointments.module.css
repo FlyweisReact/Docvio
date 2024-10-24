@@ -1,0 +1,138 @@
+/** @format */
+.page_container {
+  overflow-y: auto;
+  height: 100%;
+}
+.page_container * {
+  margin: 0;
+  padding: 0;
+}
+
+.filter_container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+.filter_container button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--text-primary-color);
+  width: 50%;
+  color: #f5f5f5;
+  font-size: var(--font-size-large);
+  font-family: OutfitRegular;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.filter_container button img {
+  width: 19px;
+}
+.flex_container {
+  margin-top: 20px;
+}
+
+.appointment_box {
+  max-width: 48%;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.appointment_box .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.appointment_box .header .edit_icon {
+  width: 47px;
+  height: 47px;
+  object-fit: contain;
+  cursor: pointer;
+}
+.appointment_box .header .title {
+  font-size: var(--font-size-medium-large);
+  color: #1e1e1e;
+  font-family: OutfitBold;
+}
+
+.appointment_box .blank {
+  width: 100%;
+  background-color: #000;
+  height: 1px;
+}
+.appointment_box .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.appointment_box .content .input_container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.appointment_box .content .input_container .title {
+  font-size: var(--font-size-small);
+  color: #1e1e1e;
+  font-family: OutfitSemibold;
+}
+
+.flex_container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Extra Small Devices (Phones, 0px and up)*/
+@media (max-width: 575.98px) {
+  .filter_container button {
+    font-size: var(--font-size-smaller);
+  }
+  .appointment_box {
+    max-width: 100%;
+  }
+  .appointment_box .header .edit_icon {
+    width: 25px;
+    height: 25px;
+  }
+  .appointment_box .header .title{
+    font-size: var(--font-size-small);
+  }
+  .appointment_box .content .input_container .title {
+    font-size: var(--font-size-smaller);
+  }
+}
+
+/* Small Devices (Tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .filter_container button {
+    font-size: var(--font-size-base);
+  }
+  .appointment_box {
+    max-width: 100%;
+  }
+  .appointment_box .header .title {
+    font-size: var(--font-size-base);
+  }
+  .appointment_box .header .edit_icon {
+    width: 30px;
+    height: 30px;
+  }
+  .appointment_box .content .input_container .title {
+    font-size: var(--font-size-smaller);
+  }
+}

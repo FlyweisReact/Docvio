@@ -52,7 +52,7 @@ code,
 
 /* The entire scrollbar */
 ::-webkit-scrollbar {
-  width: 1px;
+  width: 0px;
 }
 
 /* The scrollbar track (background) */

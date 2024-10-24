@@ -64,10 +64,28 @@ import earning_icon from "./images/DoctorPanel/earning.png";
 import transaction_icon from "./images/DoctorPanel/tracsaction.png";
 import bank_icon from "./images/DoctorPanel/bank.png";
 import log_out_icon from "./images/DoctorPanel/log-out.png";
-import appointment_icon from './images/DoctorPanel/appointment-icon.png'
-import cash_icon from './images/DoctorPanel/cash.png'
+import appointment_icon from "./images/DoctorPanel/appointment-icon.png";
+import cash_icon from "./images/DoctorPanel/cash.png";
+import close_icon from "./images/DoctorPanel/close-icon.png";
+import star_icon from "./images/DoctorPanel/Star.png";
+import edit_icon from "./images/DoctorPanel/edit-icon.png";
+import perceptionImg from "./images/DoctorPanel/perception.png";
+import checkGif from "./images/DoctorPanel/check.gif";
+import pluc_icon from './images/DoctorPanel/plus.png'
+import edit_default from './images/DoctorPanel/edit-default.png'
+import prev_icon from './images/DoctorPanel/prev.png'
+import next_icon from './images/DoctorPanel/next.png'
 
 export {
+  prev_icon,
+  next_icon,
+  edit_default,
+  pluc_icon,
+  checkGif,
+  perceptionImg,
+  edit_icon,
+  star_icon,
+  close_icon,
   cash_icon,
   doctor_profile_img,
   profile_icon,

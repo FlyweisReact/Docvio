@@ -1,0 +1,195 @@
+/** @format */
+
+.doctor_notification * {
+  margin: 0;
+  padding: 0;
+}
+.doctor_notification {
+  height: 100%;
+  overflow-y: auto;
+  padding: 0px 40px;
+  padding-bottom: 20px;
+}
+
+.flex_box {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.flex_box .notification_box {
+  width: 48%;
+}
+.notification_box {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.notification_box .active_dot {
+  min-width: 18px;
+  min-height: 18px;
+  background-color: #4ac72a;
+  border: 1px solid #4ac72a;
+  display: block;
+  border-radius: 100%;
+  margin-top: 5px;
+}
+.notification_box .content {
+  width: 100%;
+  flex: 1;
+}
+
+.notification_box .content .heading {
+  font-size: var(--font-size-small);
+  color: #1e1e1e;
+  font-family: OutfitSemibold;
+}
+.notification_box .content .description {
+  font-size: var(--font-size-small);
+  color: #1e1e1e;
+  font-family: OutfitRegular;
+}
+.notification_box .content .btn_container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.notification_box .content .btn_container button {
+  width: 127px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-size: var(--font-size-extra-small);
+  color: #fff;
+  font-family: OutfitRegular;
+  outline: none;
+}
+
+.notification_box .content .btn_container button.date_btn {
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--text-primary-color);
+}
+.notification_box .content .btn_container button.admin_btn {
+  background-color: #4ac72a;
+  border: 1px solid #4ac72a;
+}
+
+.notification_modal .close_btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+.notification_modal .close_btn img {
+  width: 26px;
+  object-fit: contain;
+  cursor: pointer;
+}
+.notification_modal .content {
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+.notification_modal .content .heading {
+  margin: 0;
+  font-size: var(--font-size-base);
+  font-family: OutfitSemibold;
+  color: #1e1e1e;
+}
+.notification_modal .content p,
+.notification_modal .content button {
+  margin: 0;
+}
+.notification_modal .content .sub_heading {
+  margin-top: 10px;
+  font-size: var(--font-size-small);
+  color: #1e1e1e;
+  font-family: OutfitSemibold;
+}
+
+.notification_modal .content .description {
+  font-size: var(--font-size-smaller);
+  color: #1e1e1e;
+  font-family: OutfitRegular;
+}
+
+.notification_modal .content .btn_container{
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.notification_modal .content .btn_container button{
+  width: 122px;
+  padding: 5px 10px;
+  font-size: var(--font-size-extra-small);
+  color: #fff;
+  font-family: OutfitRegular  ;
+  outline: none;
+  border-radius: 10px;
+}
+.notification_modal .content .btn_container button.date_btn {
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--text-primary-color);
+}
+.notification_modal .content .btn_container button.admin_btn {
+  background-color: #4AC72A;
+  border: 1px solid #4AC72A;
+}
+
+/* Extra Small Devices (Phones, 0px and up)*/
+@media (max-width: 575.98px) {
+  .doctor_notification {
+    padding: 0px;
+  }
+  .flex_box {
+    flex-direction: column;
+  }
+  .flex_box .notification_box {
+    width: 100%;
+  }
+  .notification_box .content .heading {
+    font-size: var(--font-size-smaller);
+  }
+  .notification_box .content .description {
+    font-size: var(--font-size-extra-small);
+  }
+  .notification_box .content .btn_container {
+    margin-top: 10px;
+  }
+  .notification_modal .content .heading{
+    font-size: var(--font-size-small);
+  }
+  .notification_modal .content .sub_heading{
+    font-size: var( --font-size-smaller);
+  }
+}
+
+/* Small Devices (Tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .doctor_notification {
+    padding: 0px;
+  }
+  .flex_box {
+    flex-direction: column;
+  }
+  .flex_box .notification_box {
+    width: 100%;
+  }
+  .notification_box .content .heading {
+    font-size: var(--font-size-smaller);
+  }
+  .notification_box .content .description {
+    font-size: var(--font-size-extra-small);
+  }
+  .notification_box .content .btn_container {
+    margin-top: 10px;
+  }
+}
