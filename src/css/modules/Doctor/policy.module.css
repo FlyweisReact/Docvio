@@ -1,0 +1,152 @@
+/** @format */
+
+.page_container {
+  height: 100%;
+  overflow-y: auto;
+}
+.page_container * {
+  margin: 0;
+  padding: 0;
+}
+
+.filter_btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter_btn button {
+  border: 1px solid #757575;
+  background-color: #757575;
+  padding: 10px 20px;
+  border-radius: 7px;
+  width: 50%;
+  font-size: var(--font-size-medium);
+  color: #fff;
+  font-family: OutfitRegular;
+}
+
+.filter_btn button.active {
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--text-primary-color);
+}
+
+.flex_container {
+  margin-top: 20px;
+}
+
+.appointment_box {
+  max-width: 48%;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.appointment_box .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.appointment_box .header .edit_icon {
+  width: 47px;
+  height: 47px;
+  object-fit: contain;
+  cursor: pointer;
+}
+.appointment_box .header .title {
+  font-size: var(--font-size-medium-large);
+  color: #1e1e1e;
+  font-family: OutfitBold;
+}
+.appointment_box .header .inactive {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #d62626;
+  border: 1px solid #d62626;
+  border-radius: 100%;
+}
+.appointment_box .header .inactive.recieved {
+  background-color: #4AC72A;
+  border: 1px solid #4AC72A;
+}
+
+.appointment_box .blank {
+  width: 100%;
+  background-color: #000;
+  height: 1px;
+}
+.appointment_box .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.appointment_box .content .input_container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.appointment_box .content .input_container .title {
+  font-size: var(--font-size-small);
+  color: #000;
+  font-family: OutfitSemibold;
+}
+
+.flex_container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.appointment_box .content .input_container .title.faded {
+  color: #757575 ;
+}
+
+/* Extra Small Devices (Phones, 0px and up)*/
+@media (max-width: 575.98px) {
+  .filter_btn button {
+    font-size: var(--font-size-smaller);
+  }
+  .appointment_box {
+    max-width: 100%;
+  }
+  .appointment_box .header .edit_icon {
+    width: 25px;
+    height: 25px;
+  }
+  .appointment_box .header .title {
+    font-size: var(--font-size-small);
+  }
+  .appointment_box .content .input_container .title {
+    font-size: var(--font-size-smaller);
+  }
+}
+
+/* Small Devices (Tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .filter_btn button {
+    font-size: var(--font-size-base);
+  }
+  .appointment_box {
+    max-width: 100%;
+  }
+  .appointment_box .header .title {
+    font-size: var(--font-size-base);
+  }
+  .appointment_box .header .edit_icon {
+    width: 30px;
+    height: 30px;
+  }
+  .appointment_box .content .input_container .title {
+    font-size: var(--font-size-smaller);
+  }
+}

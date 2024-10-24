@@ -1,0 +1,87 @@
+/** @format */
+
+.page_container * {
+  margin: 0;
+  padding: 0;
+}
+.page_container {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.header .btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+.header .btns button {
+  max-width: 170px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: var(--font-size-medium);
+  color: var(--text-primary-color);
+  font-family: OutfitSemibold;
+  background-color: transparent;
+  border: 1px solid #afd6ff;
+  border-radius: 10px;
+}
+.header .btns button.active {
+  background-color: #afd6ff;
+}
+
+.header .earning {
+  font-size: var(--font-size-medium);
+  color: #000000;
+  font-family: OutfitSemibold;
+}
+.header .earning .income {
+  color: #4ac72a;
+}
+.cards {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+}
+.cards .item {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  align-items: flex-start;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+}
+
+@media (max-width: 575.98px) {
+  .header .earning {
+    font-size: var(--font-size-smaller);
+  }
+  .header .btns button {
+    font-size: var(--font-size-extra-small);
+  }
+  .header .btns,
+  .header {
+    gap: 10px;
+  }
+}
+
+/* Small Devices (Tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header .btns button,
+  .header .earning {
+    font-size: var(--font-size-small);
+  }
+}

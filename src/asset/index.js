@@ -71,12 +71,34 @@ import star_icon from "./images/DoctorPanel/Star.png";
 import edit_icon from "./images/DoctorPanel/edit-icon.png";
 import perceptionImg from "./images/DoctorPanel/perception.png";
 import checkGif from "./images/DoctorPanel/check.gif";
-import pluc_icon from './images/DoctorPanel/plus.png'
-import edit_default from './images/DoctorPanel/edit-default.png'
-import prev_icon from './images/DoctorPanel/prev.png'
-import next_icon from './images/DoctorPanel/next.png'
+import pluc_icon from "./images/DoctorPanel/plus.png";
+import edit_default from "./images/DoctorPanel/edit-default.png";
+import prev_icon from "./images/DoctorPanel/prev.png";
+import next_icon from "./images/DoctorPanel/next.png";
+import chat_icon from "./images/DoctorPanel/chat.png";
+import call_icon from "./images/DoctorPanel/call.png";
+import question_icon from "./images/DoctorPanel/faq.png";
+import light_faq from "./images/DoctorPanel/light-faq.png";
+import active_chat from "./images/DoctorPanel/active-chat.png";
+import active_call from "./images/DoctorPanel/active-call.png";
+import emoji_icon from "./images/DoctorPanel/emoji.png";
+import mic_icon from "./images/DoctorPanel/mic.png";
+import attachment_icon from "./images/DoctorPanel/attachment.png";
+import callGif from "./images/DoctorPanel/call.gif";
+import avatar from './images/DoctorPanel/Avatar.png'
 
 export {
+  avatar,
+  callGif,
+  mic_icon,
+  emoji_icon,
+  attachment_icon,
+  active_call,
+  active_chat,
+  light_faq,
+  chat_icon,
+  call_icon,
+  question_icon,
   prev_icon,
   next_icon,
   edit_default,

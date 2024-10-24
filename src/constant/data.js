@@ -511,17 +511,17 @@ export const constants = {
     {
       icon: customer_care_icon,
       title: "Help & Support",
-      link: "/doctor/",
+      link: "/doctor/help&support",
     },
     {
       icon: policies_icon,
       title: "Manage Insurance Policy",
-      link: "/doctor/",
+      link: "/doctor/manage-insurance-policy",
     },
     {
       icon: earning_icon,
       title: "Earning",
-      link: "/doctor/",
+      link: "/doctor/earning",
     },
     {
       icon: transaction_icon,
@@ -534,4 +534,27 @@ export const constants = {
       link: "/doctor/",
     },
   ],
+  supportFaq : [
+    {
+      heading : "1. Headline 1",
+      description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    {
+      heading : "2. Headline 2",
+      description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    {
+      heading : "3. Headline 3",
+      description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    {
+      heading : "4. Headline 4",
+      description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    {
+      heading : "5. Headline 5",
+      description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+  ]
+
 };

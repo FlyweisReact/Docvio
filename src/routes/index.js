@@ -16,6 +16,9 @@ import DoctorAppointments from "../pages/DoctorPanel/Appointment/DoctorAppointme
 import DoctorPrescription from "../pages/DoctorPanel/Prescription/DoctorPrescription";
 import CreatePriscription from "../pages/DoctorPanel/Prescription/CreatePriscription";
 import ManageDate from "../pages/DoctorPanel/ManageDate/ManageDate";
+import DoctorSupport from "../pages/DoctorPanel/Support/DoctorSupport";
+import InsurancePolicy from "../pages/DoctorPanel/Insurance/InsurancePolicy";
+import DoctorEarning from "../pages/DoctorPanel/Earning/DoctorEarning";
 
 const routes = [
   // Default Layout
@@ -93,6 +96,18 @@ const routes = [
       {
         element: <ManageDate />,
         path: "/doctor/manage-date",
+      },
+      {
+        element: <DoctorSupport />,
+        path: "/doctor/help&support",
+      },
+      {
+        element: <InsurancePolicy />,
+        path: "/doctor/manage-insurance-policy",
+      },
+      {
+        element: <DoctorEarning />,
+        path: "/doctor/earning",
       },
     ],
   },
